@@ -40,7 +40,7 @@ void display_network_usage() {
       return;
     }
 
-    system("clear");
+    printf("\033[H\033[J");
     printf("%-8s | %-12s | %-12s\n", "Iface", "Rx Bytes", "Tx Bytes");
     printf("--------------------------------------\n");
 
